@@ -62,8 +62,8 @@ footer.site a { color: var(--muted); }
 }
 
 /* Game pages */
-.banner { background: #000; border-bottom: 1px solid var(--line); }
-.banner img { display: block; width: 100%; max-width: 1200px; height: auto; margin: 0 auto; aspect-ratio: 2 / 1; object-fit: cover; }
+.banner { display: block; margin: 24px auto 0; max-width: 600px; }
+.banner img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
 .kicker { color: var(--gold); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; margin: 32px 0 0; }
 h1.title { font-size: 48px; margin: 4px 0 12px; letter-spacing: .01em; }
 .lead { font-size: 20px; color: var(--text); }
@@ -71,10 +71,12 @@ h1.title { font-size: 48px; margin: 4px 0 12px; letter-spacing: .01em; }
 .feature { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 4px 20px 14px; }
 .feature h3 { color: var(--gold); }
 .feature p { margin: 0 0 8px; font-size: 16px; }
-.gallery { display: grid; gap: 22px; }
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+@media (max-width: 700px) { .gallery { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
 .gallery figure { margin: 0; }
 .gallery img { display: block; width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); }
-.gallery figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; }
+.gallery figcaption { color: var(--muted); font-size: 13px; line-height: 1.4; margin-top: 6px; }
+.gallery a:hover img { border-color: var(--gold); }
 a.game-card { display: block; text-decoration: none; color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin-top: 24px; }
 a.game-card:hover { border-color: var(--gold); }
 a.game-card img { display: block; width: 100%; height: auto; }
