@@ -60,3 +60,26 @@ footer.site a { color: var(--muted); }
   nav a { margin-left: 12px; }
   h1 { font-size: 27px; }
 }
+
+/* Game pages */
+.banner { background: #000; border-bottom: 1px solid var(--line); }
+.banner img { display: block; width: 100%; max-width: 1200px; height: auto; margin: 0 auto; aspect-ratio: 2 / 1; object-fit: cover; }
+.kicker { color: var(--gold); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; margin: 32px 0 0; }
+h1.title { font-size: 48px; margin: 4px 0 12px; letter-spacing: .01em; }
+.lead { font-size: 20px; color: var(--text); }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.feature { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 4px 20px 14px; }
+.feature h3 { color: var(--gold); }
+.feature p { margin: 0 0 8px; font-size: 16px; }
+.gallery { display: grid; gap: 22px; }
+.gallery figure { margin: 0; }
+.gallery img { display: block; width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); }
+.gallery figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; }
+a.game-card { display: block; text-decoration: none; color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin-top: 24px; }
+a.game-card:hover { border-color: var(--gold); }
+a.game-card img { display: block; width: 100%; height: auto; }
+a.game-card .body { padding: 18px 24px 22px; }
+a.game-card h2 { margin: 6px 0 6px; }
+a.game-card .more { color: var(--gold); }
+.card .tag, a.game-card .tag { display: inline-block; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--bg); background: var(--gold); border-radius: 4px; padding: 2px 8px; }
+@media (max-width: 520px) { h1.title { font-size: 38px; } .lead { font-size: 18px; } }
