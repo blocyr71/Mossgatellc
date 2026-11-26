@@ -84,11 +84,11 @@ a.game-card .more { color: var(--gold); }
 .card .tag, a.game-card .tag { display: inline-block; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--bg); background: var(--gold); border-radius: 4px; padding: 2px 8px; }
 @media (max-width: 520px) { h1.title { font-size: 38px; } .lead { font-size: 18px; } }
 .game-row { display: flex; gap: 20px; align-items: flex-start; }
-.game-row .thumb { flex: 0 0 200px; }
+.game-row .thumb { flex: 0 0 120px; }
 .game-row .thumb img { display: block; width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); }
 .game-row .thumb:hover img { border-color: var(--gold); }
 .game-row h3 { margin: 8px 0 4px; }
 .game-row h3 a { color: var(--text); text-decoration: none; }
 .game-row h3 a:hover { color: var(--gold); }
 .game-row p { margin: 0 0 8px; }
-@media (max-width: 560px) { .game-row { flex-direction: column; } .game-row .thumb { flex-basis: auto; width: 100%; } }
+@media (max-width: 560px) { .game-row { gap: 14px; } .game-row .thumb { flex-basis: 88px; } }
